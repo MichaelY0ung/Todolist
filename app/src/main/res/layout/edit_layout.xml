@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#666699"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:text="返回"
+                android:textColor="#fff"
+                android:background="#666699"/>
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="编辑任务"
+                android:textSize="24sp"/>
+            <Button
+                android:id="@+id/buttonsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dip"
+                android:text="保存"
+                android:textColor="#fff"
+                android:background="#666699"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"/>
+            <EditText
+                android:id="@+id/add_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入任务简要"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/add_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minLines="12"
+                android:maxLines="20"
+                android:scrollbars="vertical"
+                android:hint="任务详情"
+                android:textSize="20sp"
+                />
+            </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/dpPicker"
+        android:calendarViewShown="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TimePicker
+        android:id="@+id/tpPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+     </LinearLayout>
+   </ScrollView>
